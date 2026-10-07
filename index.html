@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Little Corner ♡</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            background: #fff5f8;
+            color: #5b4650;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #ffd6e7;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(220, 130, 160, 0.15);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #d85c88;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #765461;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d85c88;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #fff5f8, #ffe7f0);
+        }
+
+        .heart {
+            font-size: 55px;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #d85c88;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #e982a7;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            box-shadow: 0 6px 15px rgba(217, 104, 145, 0.25);
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            background: #d85c88;
+        }
+
+        .section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #d85c88;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(180, 110, 140, 0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) rotate(1deg);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #c95f83;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #806b73;
+        }
+
+        .quote {
+            background: #ffe0ec;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .quote p {
+            font-size: 24px;
+            font-style: italic;
+            max-width: 650px;
+            margin: auto;
+            color: #9b5872;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #ffd6e7;
+            color: #805566;
+        }
+
+        .sparkles {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 70px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">♡ Sweet Corner</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="heart">🌷</div>
+
+        <h1>Hello! ♡</h1>
+
+        <p>
+            Welcome to my tiny little corner of the internet,
+            filled with pastel colors, happy thoughts,
+            sweet moments and lots of love. ✨
+        </p>
+
+        <a href="#favorites" class="button">Explore ♡</a>
+    </section>
+
+    <section class="section" id="favorites">
+        <h2>My Little Favorites 🌸</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🧸</div>
+                <h3>Cozy Things</h3>
+                <p>
+                    Soft blankets, cute plushies, warm drinks
+                    and staying cozy on rainy days.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🍓</div>
+                <h3>Sweet Treats</h3>
+                <p>
+                    Strawberries, cupcakes, cookies and
+                    basically anything pink and yummy!
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌙</div>
+                <h3>Dreamy Nights</h3>
+                <p>
+                    Looking at the stars, listening to music
+                    and dreaming about wonderful things.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="quote" id="about">
+        <p>
+            "Life is better when you add a little sweetness
+            to every day." 🌷
+        </p>
+
+        <div class="sparkles">
+            ✨ ♡ ✨ ♡ ✨
+        </div>
+    </section>
+
+    <footer>
+        Made with ♡ and a little bit of magic ✨
+    </footer>
+
+</body>
+</html>
